@@ -3,6 +3,9 @@
 
 ![Dashboard](img/preview-dashboard.png)
 
+## Mission preview
+![Mission](img/preview-fake-mission.png)
+
 ## Hacktivity preview
 
 ![Hacktivity](img/mission-step.png)

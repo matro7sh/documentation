@@ -4,7 +4,12 @@ First of all, you need to download the Projet `git clone git@github.com:CMEPW/Sm
 
 ## With docker
 
-Run `make upAll` then go to [http://localhost:4200](http://localhost:4200) and use "jenaye:jenaye" to log in.
+We are using the environment variable called DOMAIN declared in the .env at the root folder of the project.
+You can override this variable as your own. Be sure to register the domain in your `/etc/hosts` that point to your local host.
+
+As we use træfik as reverse-proxy, you can refer to their documentation to learn how to customize this instance.
+
+Run `make initialize` then go to [http://smersh.lan](http://smersh.lan) and use `jenaye:jenaye` to log in.
 
 
 ## Manually
