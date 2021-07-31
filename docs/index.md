@@ -2,8 +2,9 @@
 title: Pentest oriented collaborative tool
 summary: used to track the progress of your company's engagements and generate reports 
 authors:
-    - Houziaux mike
-date: 26/06.2021
+    - Houziaux Mike
+    - Taba Franck
+date: 31/07/2021
 ---
 
 # One look to know everything about your pentest
@@ -15,5 +16,5 @@ date: 26/06.2021
 2. [Application lifecycle](lifecycle.md)
 3. [Preview](preview.md)
 4. [Report](report.md)
-5. [Architecture](services.md)
+5. [Architecture](architecture.md)
 6. [Smersh-cli](smersh-cli.md)
