@@ -18,3 +18,5 @@ date: 31/07/2021
 4. [Report](report.md)
 5. [Architecture](architecture.md)
 6. [Smersh-cli](smersh-cli.md)
+5. [Tests](tests.md)
+6. [Backup](backup.md)
