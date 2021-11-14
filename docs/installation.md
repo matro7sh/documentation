@@ -1,35 +1,58 @@
 # Installation
 
-First of all, you need to download the Projet `git clone git@github.com:CMEPW/Smersh.git` then move to `api` folder and copy .env-dist to .env.
+Clone and go to the `api/` folder. Once this is done, copy `.env-dist` to `.env`:
 
-## With docker
+```bash
+# clone the repository
+git clone git@github.com:CMEPW/Smersh.git
 
-We are using the environment variable called DOMAIN declared in the .env at the root folder of the project.
-You can override this variable as your own. Be sure to register the domain in your `/etc/hosts` that point to your local host.
+# go to the api/ folder
+cd Smersh/api
 
-As we use træfik as reverse-proxy, you can refer to their documentation to learn how to customize this instance.
+# the values in there are safe to change
+cp .env-dist .env
+```
 
-Run `make initialize` then go to [http://smersh.lan](http://smersh.lan) and use `jenaye:jenaye` to log in.
+## Using Docker
 
+We are using an environment variable called DOMAIN declared in the `.env` file at the root of the project.
+This variable is safe to override. Either way, you will need add some urls to the `/etc/hosts` file, like so:
+
+```bash
+# assuming your DOMAIN variable is the default one, this is what you will need to add
+# if your DOMAIN is different, every `smersh.lan` should be replaced by the
+# domain you selected
+
+127.0.0.1    smersh.lan
+127.0.0.1    api.smersh.lan
+127.0.0.1    codimd.smersh.lan
+127.0.0.1    bitwarden.smersh.lan
+```
+
+As we use træfik as reverse-proxy, you can refer to [their documentation](https://doc.traefik.io/traefik/contributing/documentation/) to learn how to customize this instance.
+
+To start the install, you can just run `make initialize`.
+
+If everything is working properly, you can go to [http://smersh.lan](http://smersh.lan) and use `jenaye:jenaye` to log in.
+Other credentials are there by default, such as `admin:admin`, `pentester:pentester`, `manager:manager`, and `client:client`.
 
 ## Manually
 
-### How to run API ? 
- 
+### Running the API
 
-``` 
+```bash
 docker-compose up  # when build is done do the next command
 docker-compose exec php bin/console do:da:cr  # create database
 docker-compose exec php bin/console do:sc:up --force # generation of tables
-docker-compose exec php bin/console make:entity --overwrite # 
+docker-compose exec php bin/console make:entity --overwrite #
 docker-compose exec php bin/console doctrine:fixtures:load # load fake data
 
 ```
 
-### How to Generate JWT ?
+### Generating a JWT secret
 
-```
-docker-compose exec php sh -c '                
+```bash
+docker-compose exec php sh -c '
     set -e
     apk add openssl
     mkdir -p config/jwt
@@ -41,15 +64,11 @@ docker-compose exec php sh -c '
 '
 ```
 
-### How to run client ? 
-
-
-
-## How to access SMERSH from VPS ? 
+## Accessing SMERSH from a Virtual Private Server
 
 You have to create a file named `config` into the `.ssh/` folder of you current user (your host).
 
-```
+```bash
 Host smersh
   Hostname <your-ip>
   Port <ssh-port>
