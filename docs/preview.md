@@ -1,6 +1,5 @@
 ## Dashboard 
 
-
 ![Dashboard](img/preview-dashboard.png)
 
 ## Mission preview

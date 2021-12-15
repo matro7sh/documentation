@@ -3,6 +3,9 @@ site_url: https://docs.smersh.app
 repo_url: https://github.com/CMEPW/documentation
 repo_name: Smersh
 theme:
+  language: en
+  font:
+    text: Roboto
   palette:
     primary: red
     accent: deep orange
@@ -21,3 +24,7 @@ extra:
       link: https://github.com/CMEPW/Smersh
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/smersh_sec
+  alternate:
+    - name: Arabic
+      link: /ar/ # 
+      lang: ar
