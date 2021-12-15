@@ -4,7 +4,7 @@
 
 ![test1](../img/steup.png)
 
-## Ports mapping
+## قائمة الخدمات
 
 | Container | Default DNS          |
 | --------- | -------------------- |
