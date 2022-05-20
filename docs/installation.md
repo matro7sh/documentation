@@ -33,6 +33,9 @@ As we use træfik as reverse-proxy, you can refer to [their documentation](https
 
 To start the install, you can just run `make initialize`.
 
+If you are using the default setup, you will need to accept the generated SSL certificates for the API, before logging in.
+Go to `https://api.smersh.lan` and accept the SSL certificates, then do the same for the [web client](https://smersh.lan).
+
 If everything is working properly, you can go to [http://smersh.lan](http://smersh.lan) and use `jenaye:jenaye` to log in.
 Other credentials are there by default, such as `admin:admin`, `pentester:pentester`, `manager:manager`, and `client:client`.
 
