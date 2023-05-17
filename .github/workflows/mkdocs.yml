@@ -19,7 +19,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
-        run: pip install mkdocs
+        run: pip install mkdocs mkdocs-material
       - name: Build
         run: |
           mkdir -p ./_site
