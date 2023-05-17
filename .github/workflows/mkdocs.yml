@@ -26,9 +26,13 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs mkdocs-material
       - name: Build
+        # Outputs to the './_site' directory
         run: |
           mkdir -p ./_site
           mkdocs build --site-dir ./_site --verbose
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v1
   deploy:
     environment:
       name: github-pages
