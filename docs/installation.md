@@ -4,7 +4,7 @@ Clone and go to the `api/` folder. Once this is done, copy `.env-dist` to `.env`
 
 ```bash
 # clone the repository
-git clone git@github.com:CMEPW/Smersh.git
+git clone git@github.com:matro7sh/Smersh.git
 
 # go to the api/ folder
 cd Smersh/api

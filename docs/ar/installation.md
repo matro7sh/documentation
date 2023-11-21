@@ -4,7 +4,7 @@
  
 ```bash
 # clone the repository
-git clone git@github.com:CMEPW/Smersh.git
+git clone git@github.com:matro7sh/Smersh.git
 
 # go to the api/ folder
 cd Smersh/api

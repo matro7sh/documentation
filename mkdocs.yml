@@ -1,6 +1,6 @@
 site_name: Smersh documentation
-site_url: https://cmepw.github.io/documentation/
-repo_url: https://github.com/CMEPW/documentation
+site_url: https://matro7sh.github.io/documentation/
+repo_url: https://github.com/matro7sh/documentation/
 repo_name: Smersh
 theme:
   language: en
@@ -21,7 +21,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/CMEPW/Smersh
+      link: https://github.com/matro7sh/smersh/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/smersh_sec
   alternate:

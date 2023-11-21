@@ -39,7 +39,7 @@ curl --request POST \
 
 
 
->[line](https://github.com/CMEPW/Smersh/blob/d5c6a4397a35d786c72395073ea8186659cd5188/client/src/app/components/mission-single/mission-single.component.ts#L422)
+>[line](https://github.com/matro7sh/Smersh/blob/d5c6a4397a35d786c72395073ea8186659cd5188/client/src/app/components/mission-single/mission-single.component.ts#L422)
 
 ## ما هي المتغيرات المستخدمة؟
 

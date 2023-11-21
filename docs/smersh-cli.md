@@ -32,7 +32,7 @@ pip install smersh_cli
 ### Manually
 
 `smersh-cli` requires at least Python 3.5 because of the usage of typing (see [PEP 484](https://www.python.org/dev/peps/pep-0484/) 
-for more information). However, we recommend Python 3.8 to avoid using a hack to get the project working (see [issue #12](https://github.com/CMEPW/smersh-cli/issues/12)). 
+for more information). However, we recommend Python 3.8 to avoid using a hack to get the project working (see [issue #12](https://github.com/matro7sh/smersh-cli/issues/12)). 
 If you have an older Python version, you will need to upgrade as we won't support any version below 3.5.
 
 `smersh-cli` also depends on the following libraries:
